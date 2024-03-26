@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 100%;
+}
+
+.timer-container {
+ background-image: url('./picture/1.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer{
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  flex: column;
+  justify-content: center;
+  padding-bottom: 7em;
+  padding-top: 2em;
+  width: 100%;
+  height: 100%;
+}
+
+.timer div:first-child {
+ text-align: center;
+}
+
+.chibi {
+  width: 30%;
+  height: 30%;
+}
+
+h2 {
+  font-family: 'Rubik Scribble', sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  color: white;
+}
+
+.timer div:first-child p {
+  color: white;
+}
+
+.timer div:last-child{
+  font-family: 'Truculenta', sans-serif;
+  border: 1px solid white;
+  border-radius: 3px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: 3em;
+  padding: 3em;
+  text-align: center;
+}
+
+section p:first-child, .timer div:last-child span{
+  font-size: 3em;
+  color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .timer div:last-child {
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 3em 1em;
+  }
+}
+
+.small-text {
+  font-size: 1em;
+  color: white;
+}
